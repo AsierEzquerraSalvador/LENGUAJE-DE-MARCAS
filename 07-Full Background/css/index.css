@@ -1,0 +1,10 @@
+#container p{
+    color: aliceblue;
+}#container {
+background-color: rgb(0, 255, 191);
+}
+body{
+    background-image:url(../img/goku.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

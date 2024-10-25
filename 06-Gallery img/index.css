@@ -1,0 +1,9 @@
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20 px;
+
+}
+.row-gallery{
+    display: flex;
+}
