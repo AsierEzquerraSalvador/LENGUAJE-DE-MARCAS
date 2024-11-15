@@ -1,0 +1,133 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cuerpo de la página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Fondo oscuro */
+    color: #e6e6e6; /* Texto claro */
+}
+
+/* Cabecera */
+header {
+    background-color: #1b1b1b; /* Fondo oscuro para la cabecera */
+    color: #e6e6e6; /* Texto blanco */
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between; /* Alinea el logo a la izquierda y el slogan a la derecha */
+    align-items: center;
+}
+
+header .logo img {
+    width: 150px; /* Ajusta el tamaño del logo */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+header .slogan {
+    font-size: 1.5rem;
+    color: #e60000; /* Rojo Batman */
+    font-family: 'Bangers', sans-serif; /* Fuente estilo Batman */
+    letter-spacing: 2px;
+    text-align: right;
+    font-weight: bold;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-direction: row; /* Alinea el menú y el contenido principal de manera horizontal */
+}
+
+/* Menú de navegación (Sidebar) */
+.sidebar {
+    width: 250px;
+    background-color: #1b1b1b; /* Fondo oscuro */
+    padding: 20px;
+    height: 100vh; /* Altura completa de la pantalla */
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px; /* Espacio entre los elementos */
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #fff; /* Enlaces blancos */
+    font-size: 1.2rem;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block; /* Hace que los enlaces ocupen todo el ancho disponible */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efecto hover para los enlaces del menú */
+.sidebar ul li a:hover {
+    background-color: #e60000; /* Rojo de Batman cuando pasas el ratón */
+    color: #121212; /* Cambio de color de texto a oscuro */
+    transform: scale(1.1); /* Efecto de aumento */
+}
+
+/* Contenido principal (Main) */
+main {
+    flex-grow: 1; /* Hace que el contenido principal ocupe el espacio restante */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #e60000; /* Rojo Batman */
+    font-family: 'Bangers', sans-serif;
+}
+
+.intro p {
+    font-size: 1.3rem;
+    color: #e6e6e6;
+    line-height: 1.5;
+}
+
+/* Pie de página */
+footer {
+    background-color: #1b1b1b;
+    color: #e6e6e6;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* En pantallas más pequeñas, coloca el menú encima del contenido */
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto; /* El menú será de altura dinámica */
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .intro h2 {
+        font-size: 2rem;
+    }
+
+    .intro p {
+        font-size: 1rem;
+    }
+}

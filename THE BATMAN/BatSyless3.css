@@ -1,0 +1,117 @@
+/* Estilos básicos */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Fondo oscuro */
+    color: #e6e6e6; /* Texto claro */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1b1b1b; /* Fondo oscuro */
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #e60000; /* Rojo Batman */
+    font-family: 'Bangers', sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #e6e6e6;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #e60000; /* Rojo Batman al pasar el ratón */
+}
+
+/* Estilo para la sección de galería */
+.features {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2rem;
+    color: #e60000; /* Rojo Batman */
+    font-family: 'Bangers', sans-serif;
+    margin-bottom: 20px;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.feature {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.feature img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+
+.feature:hover img {
+    transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
+}
+
+/* Estilo para la sección Intro */
+.intro {
+    text-align: center;
+    padding: 80px 20px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d3/The_Batman_2022_Logo.svg'); /* Nuevo logo de fondo */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    height: 400px;
+}
+
+.intro p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+}
+
+/* Estilo de footer */
+footer {
+    background-color: #1b1b1b;
+    text-align: center;
+    padding: 20px;
+    color: #e6e6e6;
+    font-size: 14px;
+}
+
+/* Media Queries para pantallas más grandes */
+@media (min-width: 600px) {
+    .image-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}

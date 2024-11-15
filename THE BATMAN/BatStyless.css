@@ -1,0 +1,115 @@
+/* styles.css */
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cuerpo de la página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Fondo oscuro */
+    color: #e6e6e6; /* Texto claro */
+}
+
+/* Cabecera */
+header {
+    background-color: #1b1b1b; /* Fondo oscuro para la cabecera */
+    color: #e6e6e6; /* Texto blanco */
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-family: 'Bangers', sans-serif; /* Fuente de estilo Batman */
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #e60000; /* Rojo oscuro */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Sombra para efecto dramático */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Enlaces blancos */
+    font-size: 1.2rem;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #e60000; /* Rojo de Batman */
+    color: #121212; /* Cambio de color de texto a oscuro */
+    transform: scale(1.1); /* Efecto de aumento */
+}
+
+/* Contenido principal */
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #e60000; /* Rojo Batman */
+    font-family: 'Bangers', sans-serif;
+}
+
+.intro p {
+    font-size: 1.3rem;
+    color: #e6e6e6;
+    line-height: 1.5;
+}
+
+/* Pie de página */
+footer {
+    background-color: #1b1b1b;
+    color: #e6e6e6;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .intro h2 {
+        font-size: 2rem;
+    }
+
+    .intro p {
+        font-size: 1rem;
+    }
+}
