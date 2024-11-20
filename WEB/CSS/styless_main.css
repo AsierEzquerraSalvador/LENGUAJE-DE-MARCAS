@@ -1,0 +1,159 @@
+/* --- Variables mejoradas --- */
+:root {
+    --color-negro: #121212;
+    --color-blanco: #ffffff;
+    --color-gris: #f4f4f4;
+    --color-jordan: #d3212d;
+    --color-gris-oscuro: #333333;
+    --color-blanco-puro: #f9f9f9;
+    --sombra-producto: rgba(0, 0, 0, 0.15);
+    --transicion-suave: 0.3s ease-out;
+}
+
+/* --- Reset general --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- Tipografía --- */
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background-color: var(--color-gris);
+    color: var(--color-gris-oscuro);
+}
+
+/* --- Cabecera Responsive --- */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--color-negro);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.logo {
+    width: 100%;
+    text-align: center;
+}
+
+.logo img {
+    height: 50px;
+    transition: transform 0.3s;
+}
+
+nav {
+    width: 100%;
+    margin-top: 15px;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    color: var(--color-blanco);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 2px;
+    transition: color var(--transicion-suave);
+}
+
+/* --- Banner Responsive --- */
+.banner img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+/* --- Productos Responsive --- */
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 15px;
+}
+
+.producto {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px var(--sombra-producto);
+}
+
+.producto img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.producto-detalle {
+    padding: 15px;
+}
+
+/* --- Pie de página Responsive --- */
+footer {
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* --- Breakpoints Responsive --- */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .banner img {
+        max-height: 300px;
+    }
+
+    .productos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .producto {
+        width: 90%;
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .banner img {
+        max-height: 200px;
+    }
+}
