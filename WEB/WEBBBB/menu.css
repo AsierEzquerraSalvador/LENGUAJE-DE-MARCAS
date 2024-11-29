@@ -1,0 +1,208 @@
+/* Reset y estilos generales */
+* {
+  margin: 0; /* Elimina márgenes predeterminados de todos los elementos */
+  padding: 0; /* Elimina rellenos predeterminados de todos los elementos */
+  box-sizing: border-box; /* Hace que el padding y border se incluyan dentro del tamaño total de los elementos */
+  font-family: Arial, sans-serif; /* Define la fuente predeterminada para toda la página */
+}
+
+body {
+  background-color: #f5f5f5; /* Establece un fondo gris claro para toda la página */
+  min-height: 100vh; /* Asegura que la página tenga al menos la altura de la ventana */
+  position: relative; /* Permite que los elementos posicionados se ajusten dentro del cuerpo de la página */
+}
+
+/* Estilos para el Header (cabecera) */
+.header {
+  width: 100%; /* Hace que el encabezado ocupe todo el ancho disponible */
+  position: relative; /* Permite el uso de posiciones relativas en los elementos dentro de este contenedor */
+  z-index: 2; /* Asegura que el encabezado se superponga a otros elementos si es necesario */
+}
+
+/* Estilo para el logo en la parte superior */
+.logo-top {
+  background-color: #000;
+  background-color: #ff0000; /* Fondo rojo para el logo */
+  color: white; /* Texto blanco para el logo */
+  text-align: center; /* Centra el texto en el contenedor */
+  padding: 15px; /* Añade relleno para dar espacio alrededor del texto */
+  font-size: 3rem; /* Tamaño grande para el texto */
+  font-weight: bold; /* El texto se pone en negrita */
+  letter-spacing: 2px; /* Añade espacio entre las letras para hacerlo más llamativo */
+}
+
+/* Estilos para la barra de navegación */
+.nav {
+  background-color: rgba(226, 221, 221, 0.9); /* Fondo blanco semi-transparente */
+  padding: 15px 0; /* Añade espacio arriba y abajo del menú */
+}
+
+/* Estilos para los elementos del menú de navegación */
+.menu {
+  display: flex; /* Establece los elementos en una fila */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+  list-style: none; /* Elimina los puntos de lista predeterminados */
+  gap: 135px; /* Añade un espacio de 70px entre los elementos del menú */
+}
+
+/* Estilos para los enlaces del menú */
+.menu a {
+  text-decoration: none; /* Elimina el subrayado en los enlaces */
+  color: #000; /* El texto de los enlaces es negro */
+  font-weight: bold; /* Los enlaces están en negrita */
+  text-transform: uppercase; /* Los enlaces se escriben en mayúsculas */
+  font-size: 1.5rem; /* Tamaño de fuente de los enlaces */
+  transition: color 0.3s ease; /* Transición suave cuando cambia el color */
+}
+
+/* Estilo para cuando se pasa el ratón sobre un enlace del menú */
+.menu a:hover {
+  color: #ff0000; /* Cambia el color del enlace a rojo cuando se pasa el ratón sobre él */
+}
+
+/* Estilo para el logo de Nike en el menú */
+.menu-logo img {
+  width: 70px; /* Ancho fijo para el logo */
+  height: auto; /* Mantiene la proporción original del logo */
+}
+
+/* Estilos para el contenido principal de la página */
+.main-content {
+  position: relative; /* Posición relativa para el contenido principal */
+  height: 700px; /* Altura fija para el área principal */
+  background: url('./IMAGENES/Inicio11.PNG') center/cover no-repeat; /* Imagen de fondo que se ajusta al tamaño de la sección */
+  display: flex; /* Establece los elementos dentro de este contenedor en una fila */
+  align-items: flex-start; /* Los elementos se alinean al inicio (arriba) */
+  justify-content: flex-start; /* Los elementos se alinean a la izquierda */
+  padding: 50px; /* Espaciado interno alrededor del contenido */
+}
+
+/* Estilos para la información del producto dentro del contenido principal */
+.product-info {
+  margin-top: 300px; /* Desplaza hacia abajo el contenido */
+  color: #000; /* Establece el color del texto en negro */
+}
+
+/* Estilos para el título principal del producto */
+.product-title {
+  font-size: 2.5rem; /* Tamaño grande para el título */
+  font-weight: bold; /* Título en negrita */
+  margin-bottom: 10px; /* Espacio inferior entre el título y la descripción */
+  display: flex; /* Elementos alineados en línea */
+  gap: 5px; /* Espacio entre el "NIKE" y el "X" */
+  align-items: center; /* Alinea verticalmente los elementos */
+}
+
+/* Estilo para la parte del título con el "X" */
+.product-title span {
+  color: #666; /* Color gris para el "X" */
+}
+
+/* Estilos para la descripción del producto */
+.product-description {
+  margin: 15px 0; /* Espaciado superior e inferior */
+  max-width: 300px; /* Ancho máximo para la descripción */
+  font-size: 1.2rem; /* Tamaño moderado del texto */
+  line-height: 1.4; /* Altura de línea más amplia para mejorar la legibilidad */
+}
+
+/* Estilos para el botón de compra */
+.buy-button {
+  display: inline-block; /* El botón se muestra en línea con otros elementos */
+  background-color: #000; /* Fondo negro para el botón */
+  color: white; /* Texto blanco */
+  padding: 15px 40px; /* Espaciado interno (más ancho en los lados) */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  border-radius: 25px; /* Bordes redondeados */
+  font-weight: bold; /* El texto es negrita */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  font-size: 1.2rem; /* Tamaño del texto dentro del botón */
+  transition: background-color 0.3s ease; /* Transición suave al cambiar el color de fondo */
+}
+
+/* Estilo para cuando se pasa el ratón sobre el botón de compra */
+.buy-button:hover {
+  background-color: #ff0000; /* Cambia el color del fondo a rojo al pasar el ratón */
+}
+
+/* Estilos para el footer */
+.footer {
+  background-color: rgba(0, 0, 0, 0.9); /* Fondo negro semitransparente */
+  color: white; /* Texto blanco */
+  text-align: center; /* Centra el texto */
+  padding: 20px; /* Espaciado interno */
+  position: fixed; /* Fija el footer en la parte inferior */
+  bottom: 0; /* Se ajusta al fondo de la página */
+  width: 100%; /* Ocupa todo el ancho de la pantalla */
+  font-size: 1rem; /* Tamaño del texto */
+}
+
+/* Estilos para el menú hamburguesa (menú móvil) */
+.hamburger {
+  display: none; /* Oculta el menú hamburguesa por defecto */
+  flex-direction: column; /* Coloca las líneas en una columna */
+  gap: 5px; /* Espacio entre las líneas */
+  cursor: pointer; /* Cambia el cursor al hacer clic en el menú */
+  padding: 10px; /* Espaciado interno */
+}
+
+.hamburger span {
+  display: block; /* Cada línea ocupa una fila */
+  width: 25px; /* Ancho de las líneas */
+  height: 3px; /* Altura de las líneas */
+  background-color: #000; /* Color negro para las líneas */
+  transition: 0.3s; /* Animación suave para la transición */
+}
+
+/* Diseño responsivo: Pantallas menores a 768px */
+@media (max-width: 768px) {
+  .hamburger {
+      display: flex; /* Muestra el menú hamburguesa en pantallas pequeñas */
+      position: absolute; /* Posición absoluta respecto a su contenedor */
+      top: 15px; /* Desde la parte superior */
+      right: 15px; /* Desde la parte derecha */
+  }
+
+  .menu {
+      display: none; /* El menú se oculta por defecto en dispositivos pequeños */
+      flex-direction: column; /* Coloca los elementos del menú en columna */
+      gap: 20px; /* Espacio entre los enlaces */
+      padding: 20px 0; /* Espaciado dentro del menú */
+  }
+
+  .menu.active {
+      display: flex; /* Muestra el menú cuando está activo */
+  }
+
+  .product-info {
+      margin-top: 150px; /* Reduce el margen superior */
+      padding: 20px; /* Añade relleno dentro del contenedor */
+  }
+
+  .main-content {
+      padding: 20px; /* Añade relleno alrededor del contenido */
+      height: calc(100vh - 150px); /* Calcula la altura dinámica */
+  }
+
+  .footer {
+      position: relative; /* Cambia la posición del footer a relativa */
+      padding: 15px; /* Reduce el relleno */
+  }
+}
+
+/* Diseño responsivo: Pantallas menores a 480px */
+@media (max-width: 480px) {
+  .logo-top {
+      font-size: 2rem; /* Reduce el tamaño del logo */
+      padding: 10px; /* Reduce el relleno del logo */
+  }
+
+  .product-info {
+      margin-top: 100px; /* Ajusta el margen superior */
+  }
+
+  .product-description {
+      max-width: 100%; /* Deja que la descripción ocupe todo el ancho disponible */
+  }
+}
