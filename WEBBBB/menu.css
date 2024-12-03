@@ -1,0 +1,418 @@
+  /* Cargar la fuente NIKE */
+  @font-face { 
+    font-family: "NIKE";  /* Define el nombre de la fuente personalizada */
+    src: url(./Tipografia/NIKE.ttf);  /* Especifica la ubicación del archivo de la fuente */
+  }
+
+  /* Reset básico */
+  * {
+    margin: 0;  /* Elimina el margen de todos los elementos */
+    padding: 0;  /* Elimina el padding de todos los elementos */
+    box-sizing: border-box;  /* Asegura que el padding y el borde no afecten el tamaño total de los elementos */
+    font-family: Arial, sans-serif;  /* Establece la fuente predeterminada para todo el cuerpo */
+  }
+
+  /* Estilo para el contenedor "JUST DO IT" */
+  .just-do-it {
+      background-color: #ff0000; /* Fondo rojo */
+      color: white; /* Texto blanco */
+      text-align: center; /* Centra el texto */
+      font-size: 3rem; /* Tamaño grande del texto */
+      padding: 20px; /* Espaciado interno */
+      border: 10px solid black; /* Borde negro ancho */
+      display: inline-block; /* Hace que el bloque sea en línea con otros elementos */
+      margin: 20px auto; /* Centra el bloque y da margen alrededor */
+      width: 100%;  /* Ocupa el 100% del ancho disponible */
+      margin-top: -2px;  /* Ajusta ligeramente el margen superior */
+      font-family: "NIKE", Arial, sans-serif; /* Usa la fuente personalizada NIKE */
+  }
+
+  /* Estilos del cuerpo */
+  /* Estilos del cuerpo */
+  body {
+    background-color: rgba(228, 226, 227, 255); /* Fondo gris claro */
+    min-height: 100vh;  /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+    position: relative;
+  
+  }
+
+
+  /* Header principal */
+  .header {
+    width: 100%;  /* El encabezado ocupa todo el ancho */
+    position: relative;
+    z-index: 2;  /* Asegura que el encabezado esté por encima de otros elementos */
+  }
+
+  .logo-top {
+    background-color: #ff0000; /* Fondo rojo */
+    color: white;  /* Texto blanco */
+    text-align: center;
+    padding: 15px;
+    font-size: 3rem;
+    font-weight: bold;  /* Texto en negrita */
+    letter-spacing: 2px;  /* Espaciado entre letras */
+  }
+
+  /* Navegación */
+ /* Estilo de la barra de navegación */
+/* Estilo de la barra de navegación */
+nav {
+  background-color: rgba(228, 226, 227, 255); /* Fondo gris claro */
+  padding: 10px;
+  display: flex; /* Usamos flexbox para la navegación */
+  justify-content: space-between; /* Espaciado entre los elementos */
+  align-items: center; /* Alinea verticalmente los elementos */
+}
+
+/* Estilo de los elementos del menú */
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none; /* Elimina los puntos de lista */
+  gap: 170px; /* Espacio entre los enlaces de navegación */
+}
+
+/* Estilo de los enlaces del menú */
+.menu a {
+  text-decoration: none; /* Elimina el subrayado */
+  color: rgb(255, 255, 255); /* Texto blanco */
+  text-transform: uppercase; /* Convierte el texto a mayúsculas */
+  font-size: 2.5rem; /* Tamaño de fuente más grande */
+  transition: color 0.3s ease; /* Transición suave para el cambio de color */
+  font-family: "NIKE", Arial, sans-serif; /* Usa la fuente personalizada NIKE */
+}
+
+/* Estilo de los enlaces del menú cuando se pasa el ratón */
+.menu a:hover {
+  color: #ff0000; /* Al pasar el ratón, el texto se vuelve rojo */
+}
+
+/* Logo de la marca */
+.menu-logo img {
+  width: 70px; /* Establece un tamaño fijo para la imagen del logo */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Estilo del ícono de la hamburguesa */
+.hamburger {
+  display: none; /* Inicialmente oculto */
+  flex-direction: column; /* Coloca las líneas del menú en columna */
+  gap: 2px; /* Espaciado entre las líneas */
+  cursor: pointer; /* Cambia el cursor a una mano */
+  padding: 2px; /* Reducción del padding */
+  position: relative;
+  z-index: 101; /* Asegura que el ícono esté por encima del menú */
+}
+
+.hamburger span {
+  display: block; /* Hace que las líneas sean bloques */
+  width: 15px; /* Ancho de las líneas */
+  height: 3px; /* Altura de las líneas */
+  background-color: #000; /* Color negro */
+  transition: 0.3s; /* Transición suave */
+}
+
+/* Estilo del checkbox (oculto) que controla la visibilidad del menú */
+.menu-toggle {
+  display: none; /* Oculta el checkbox */
+}
+
+/* Mostrar el ícono de la hamburguesa en pantallas pequeñas */
+@media (max-width: 768px) {
+  /* El menú se oculta por defecto en pantallas pequeñas */
+  .menu {
+    display: none;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre los enlaces */
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #fff; /* Fondo blanco */
+    width: 100%; /* Ancho completo */
+    z-index: 100; /* Asegura que el menú esté por encima de otros elementos */
+    padding: 10px;
+  }
+
+  /* El ícono de la hamburguesa se muestra en pantallas pequeñas */
+  .hamburger {
+    display: flex; /* Muestra el menú hamburguesa */
+    position: absolute;
+    top: 15px; /* Ajustamos la posición del ícono */
+    right: 20px; /* Posición horizontal del ícono */
+  }
+
+  /* Mostrar el menú cuando el checkbox está marcado */
+  .menu-toggle:checked + .hamburger + .menu {
+    display: flex;
+  }
+
+  /* Estilo de los enlaces del menú en pantallas pequeñas */
+  .menu a {
+    font-size: 2rem; /* Tamaño más pequeño en pantallas pequeñas */
+    text-align: center;
+    padding: 15px;
+    color: black;
+    text-decoration: none;
+  }
+
+  /* Estilo de los enlaces del menú al pasar el ratón */
+  .menu a:hover {
+    background-color: #f0f0f0;
+  }
+}
+
+
+
+  /* Contenido principal */
+.main-content {
+  position: relative;
+  height: 800px;  /* Establece una altura fija */
+  background: url('./IMAGENES/INICIOGRANDE2.png') center no-repeat;  /* Imagen de fondo */
+  background-color: rgba(228, 226, 227, 255);  /* Fondo gris claro si no se carga la imagen */
+  display: flex;  /* Usamos flexbox para el diseño */
+  align-items: flex-start;  /* Alinea los elementos al principio */
+  justify-content: flex-start;  /* Alinea los elementos al principio */
+  padding: 50px;  /* Espaciado interno */
+  width: 100%;  /* Ocupa el 100% del ancho */
+  margin-top: -1px;  /* Ajusta ligeramente el margen superior */
+  background-size: cover;  /* Hace que la imagen cubra toda el área del contenedor */
+  background-position: center;  /* Asegura que la imagen esté centrada */
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .main-content {
+    height: 100vh;  /* Ajusta la altura al 100% de la ventana visible */
+    background-size: cover;  /* Asegura que la imagen cubra todo el área disponible */
+    background-position: center center;  /* Centra la imagen tanto vertical como horizontalmente */
+    padding: 20px;  /* Reduce el espaciado interno en pantallas pequeñas */
+  }
+}
+
+
+  .product-info {
+    margin-top: 50px;  /* Da un margen superior grande */
+    color: #000;  /* Texto negro */
+  }
+
+  .product-title {
+    font-size: 2.5rem;  /* Tamaño grande para el título */
+    font-weight: bold;  /* Enfatiza el título con negrita */
+    margin-bottom: 10px;  /* Espacio debajo del título */
+    display: flex;
+    gap: 5px;  /* Espacio entre elementos dentro del título */
+    align-items: center;
+  }
+
+  .product-title span {
+    color: #666;  /* Color gris para las palabras dentro del título */
+  }
+
+  .product-title.new-model {
+    background-color: #ff0000;  /* Fondo rojo */
+    color: white;  /* Texto blanco */
+    padding: 10px 20px;  /* Espaciado interno */
+    font-size: 2rem;  /* Tamaño grande */
+    border-radius: 5px;  /* Bordes redondeados */
+    display: inline-block;
+    margin-top: 10px;  /* Margen superior */
+  }
+
+  .product-description {
+    margin: 15px 0;  /* Espacio vertical */
+    max-width: 300px;  /* Limita el ancho */
+    font-size: 1.2rem;  /* Tamaño moderado para la descripción */
+    line-height: 1.4;  /* Espaciado entre líneas */
+  }
+
+  .buy-button {
+    display: inline-block;  /* Hace que el botón se comporte como un bloque en línea */
+    background-color: #000;  /* Fondo negro */
+    color: white;  /* Texto blanco */
+    padding: 15px 40px;  /* Espaciado interno */
+    text-decoration: none;  /* Elimina el subrayado */
+    border-radius: 25px;  /* Bordes redondeados */
+    font-weight: bold;  /* Enfatiza el texto */
+    text-transform: uppercase;  /* Convierte el texto a mayúsculas */
+    font-size: 1.2rem;  /* Tamaño moderado */
+    transition: background-color 0.3s ease;  /* Transición suave para el fondo */
+  }
+
+  .buy-button:hover {
+    background-color: #ff0000;  /* Fondo rojo al pasar el ratón */
+  }
+
+  /* Pie de página */
+  .footer {
+    background-color: rgba(0, 0, 0, 0.9);  /* Fondo negro */
+    color: white;  /* Texto blanco */
+    text-align: center;  /* Centra el texto */
+    padding: 20px;  /* Espaciado interno */
+    position: fixed;  /* Fijo en la parte inferior */
+    bottom: 0;  /* Pegado al fondo */
+    width: 100%;  /* Ocupa el 100% del ancho */
+    font-size: 1rem;  /* Tamaño moderado para el texto */
+  }
+
+  /* Estilos del menú hamburguesa */
+  .hamburger {
+    display: none;  /* Inicialmente oculto */
+    flex-direction: column;  /* Ordena las líneas en columna */
+    gap: 5px;  /* Espacio entre las líneas */
+    cursor: pointer;  /* Cambia el cursor a una mano */
+    padding: 10px;  /* Espaciado interno */
+  }
+
+  .hamburger span {
+    display: block;  /* Hace que las líneas sean bloques */
+    width: 25px;  /* Ancho de las líneas */
+    height: 3px;  /* Altura de las líneas */
+    background-color: #000;  /* Color negro */
+    transition: 0.3s;  /* Transición suave para los cambios */
+  }
+
+  @media (max-width: 768px) {
+    .menu {
+      gap: 250px;  /* Aumenta el espacio entre los elementos del menú en pantallas pequeñas */
+    }
+
+    .hamburger {
+      display: flex;  /* Muestra el menú hamburguesa en pantallas pequeñas */
+      position: absolute;
+      top: 15px;
+      right: 15px;
+    }
+  }
+
+  /* Sección Superventas */
+  .superventas {
+      padding: 40px;
+      background-color: #f5f5f5;  /* Fondo gris claro */
+      text-align: center;  /* Centra el contenido */
+      margin: 0px 100px 100px 100px;  /* Márgenes: arriba 0, derecha 20px, abajo 20px, izquierda 20px */
+  }
+
+  .superventas h2 {
+      font-size: 2.5rem;  /* Tamaño grande para el título */
+      margin-bottom: 20px;  /* Espacio debajo del título */
+      font-weight: bold;  /* Enfatiza el texto */
+      text-transform: uppercase;  /* Convierte el texto a mayúsculas */
+      color: #000;  /* Texto negro */
+  }
+
+/* Estilo para el contenedor de los productos */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;  /* Espacio entre productos */
+  justify-content: center;  /* Distribuye los productos uniformemente */
+  margin: 0px 100px 100px 100px;  /* Márgenes: arriba 0, derecha 100px, abajo 100px, izquierda 100px */
+}
+
+/* Tarjetas individuales */
+.product-card {
+  background-color: #f5f5f5;  /* Fondo gris claro */
+  border: 1px solid #ddd;  /* Borde gris claro */
+  border-radius: 10px;  /* Bordes redondeados */
+  flex-basis: calc(33.33% - 20px);  /* Ancho flexible (3 columnas en pantallas grandes) */
+  text-align: left;  /* Alinea el texto a la izquierda dentro de la tarjeta */
+  overflow: hidden;  /* Evita el desbordamiento de contenido */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Transición suave para efectos */
+  box-sizing: border-box;  /* Asegura que el ancho incluya el padding y el border */
+}
+
+/* Efecto hover para las tarjetas */
+.product-card:hover {
+  transform: translateY(-5px);  /* Eleva la tarjeta al pasar el ratón */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  /* Sombra sutil al pasar el ratón */
+}
+
+/* Contenedor de imagen en la tarjeta */
+.product-image img {
+  width: 100%;  /* La imagen ocupa el 100% del ancho */
+  height: 400px;  /* Altura fija para las imágenes */
+  object-fit: cover;  /* La imagen cubre todo el espacio sin distorsionarse */
+  background-color: #ccc;  /* Fondo gris en caso de que la imagen no se cargue */
+}
+
+/* Contenido de la tarjeta */
+.product-info {
+  padding: 15px;  /* Espaciado interno */
+}
+
+/* Títulos de productos dentro de la tarjeta */
+.product-title {
+  font-size: 1.5rem;  /* Tamaño de fuente grande */
+  font-weight: bold;  /* Negrita para el título */
+  margin-bottom: 10px;  /* Margen inferior */
+}
+
+/* Descripción y subtítulo de los productos */
+.product-subtitle {
+  font-size: 1rem;  /* Tamaño de fuente moderado */
+  color: #777;  /* Color gris claro */
+  margin-bottom: 10px;  /* Margen inferior */
+}
+
+/* Precio original tachado */
+.product-price {
+  font-size: 1rem;
+  color: #999;  /* Gris claro */
+  text-decoration: line-through;  /* Tachado del precio */
+}
+
+/* Precio con descuento */
+.product-discounted-price {
+  font-size: 1.5rem;  /* Tamaño de fuente más grande */
+  color: #000;  /* Texto en negro */
+  font-weight: bold;  /* Negrita para resaltar el precio */
+  margin-bottom: 10px;  /* Margen inferior */
+}
+
+/* Media Queries para hacer el diseño responsive */
+
+/* Para pantallas medianas (tabletas) */
+@media (max-width: 1024px) {
+  .product-card {
+    flex-basis: calc(50% - 20px);  /* 2 columnas en pantallas medianas */
+  }
+}
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .product-card {
+    flex-basis: 100%;  /* 1 columna en pantallas pequeñas */
+  }
+
+  .product-grid {
+    margin: 0 20px 20px 20px;  /* Márgenes reducidos en pantallas pequeñas */
+  }
+}
+
+
+  /* Descuento en color verde */
+  .discount {
+    font-size: 1rem;
+    color: #008000;  /* Verde para el descuento */
+    font-weight: bold;
+  }
+
+  /* Sección Superventas alineada a la derecha */
+  .superventas {
+    padding: 40px;
+    background-color: #f5f5f5;  /* Fondo gris claro */
+    text-align: left;  /* Alinea todo el texto de la sección a la derecha */
+  }
+
+  /* Título de Superventas */
+  .superventas h2 {
+    font-size: 2.5rem;  /* Tamaño grande para el título */
+    margin-bottom: 20px;  /* Espacio debajo del título */
+    font-weight: bold;  /* Negrita */
+    text-transform: uppercase;  /* Mayúsculas */
+    color: #000;  /* Color negro */
+  }
+
+
