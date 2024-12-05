@@ -3,97 +3,252 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Secular+One&display=swap" rel="stylesheet">
     <title>Nike - Just Do It</title>
     <link rel="stylesheet" href="menu.css">
 </head>
 <body>
-    <header class="header">
-        <div class="just-do-it">
-            JUST DO IT
+    <div class="just-do-it">
+        <div class="red">
+            <h2>JUST DO IT</h2>
         </div>
-        <nav>
-            <!-- Logo de la marca -->
-            <div class="menu-logo">
-              <img src="path_to_logo.png" alt="Logo">
-            </div>
-          
-            <!-- Checkbox que controla la visibilidad del menú -->
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-          
-            <!-- Ícono de la hamburguesa -->
-            <label for="menu-toggle" class="hamburger">
-              <span></span>
-              <span></span>
-              <span></span>
-            </label>
-          
-            <!-- Menú de navegación -->
-            <ul class="menu">
-              <li><a href="#">Inicio</a></li>
-              <li><a href="#">Productos</a></li>
-              <li><a href="#">Acerca de</a></li>
-              <li><a href="#">Contacto</a></li>
-            </ul>
-          </nav>
-    </header>
-
-    <main class="main-content">
-        <div class="product-info">
-            <div class="product-title">
-                NIKE<span>X</span>JORDAN
-            </div>
-            <div class="product-title new-model">NEW MODEL</div>
-            <p class="product-description">El último modelo diseñado para el máximo rendimiento, con innovación, deporte y estilo funcional en perfecta armonía.</p>
-            <a href="#" class="buy-button">Comprar!</a>
+    </div>
+    <header>
+        <div class="container">
+          <!-- Desktop Left Texts -->
+          <div class="left">
+            <a href="#abaut" class="text">INICIO</a>
+            <a href="#abaut" class="text">COLECCION</a>
+          </div>
+      
+          <!-- Logo -->
+          <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg" alt="Nike Logo">
+          </div>
+      
+          <!-- Desktop Right Texts -->
+          <div class="right">
+            <a href="#abaut" class="text">ZAPATILLAS</a>
+            <a class="text">CONTACTO</a>
+          </div>
+      
+          <!-- Hamburger Menu (Checkbox) -->
+          <input type="checkbox" id="menu-toggle" class="menu-toggle">
+          <label for="menu-toggle" class="menu-icon">☰</label>
+      
+          <!-- Mobile Menu -->
+          <div id="mobile-menu">
+            <label for="menu-toggle" class="close-btn">✖</label>
+            <a href="#">INICIO</a>
+            <a href="#">COLECCIÓN</a>
+            <a href="#">ZAPATILLAS</a>
+            <a href="#">CONTACTO</a>
+          </div>
         </div>
-    </main>
-
-    <section class="superventas">
-        <h2>Superventas</h2>
-        <div class="product-grid">
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="https://via.placeholder.com/300x200" alt="Nike Air Force 1'07">
-                </div>
+      </header>
+      
+    <div class="cuerpo">
+        <div class="imagen-cuerpo">
+            <img src="IMAGENES/NIKE.png" alt="Nike Air Force 1'07">
+            <div class="main-content">
                 <div class="product-info">
-                    <h3 class="product-title">Nike Air Force 1'07</h3>
-                    <p class="product-subtitle">Zapatillas - Hombre<br>1 color</p>
-                    <p class="product-price">119.99 €</p>
-                    <p class="product-discounted-price">83.99 €</p>
-                    <p class="discount">40% de descuento</p>
+                    <div class="product-title">
+                        NIKE<span>X</span>JORDAN
+                    </div>
+                    <div class="product-title new-model">NEW MODEL</div>
+                    <p class="product-description">El último modelo diseñado para el máximo rendimiento, con innovación, deporte y estilo funcional en perfecta armonía.</p>
+                    <a href="#" class="buy-button">Comprar!</a>
                 </div>
             </div>
-
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="https://via.placeholder.com/300x200" alt="Nike Air Max Plus 3">
-                </div>
-                <div class="product-info">
-                    <h3 class="product-title">Nike Air Max Plus 3</h3>
-                    <p class="product-subtitle">Zapatillas - Hombre<br>1 color</p>
-                    <p class="product-price">189.99 €</p>
-                    <p class="product-discounted-price">132.99 €</p>
-                    <p class="discount">30% de descuento</p>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="https://via.placeholder.com/300x200" alt="Nike Dunk Low Retro">
-                </div>
-                <div class="product-info">
-                    <h3 class="product-title">Nike Dunk Low Retro</h3>
-                    <p class="product-subtitle">Zapatillas - Hombre<br>Múltiples colores</p>
-                    <p class="product-price">119.99 €</p>
-                    <p class="product-discounted-price">83.99 €</p>
-                    <p class="discount">30% de descuento</p>
-                </div>
+            <div class="logo-imagen">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg" alt="Nike Logo">
             </div>
         </div>
-    </section>
+    </div>
+    <div class="black-box">
+        <p>Hazte miembro Nike y consigue acceso exclusivo a promociones, lanzamientos anticipados, productos personalizados y mucho más. ¡Únete gratis y eleva tu experiencia deportiva!</p>
+    </div>
+
+    <div class="superventas">
+        <div class="tarjeta">
+          <img src="IMAGENES/NIKE.png" alt="Nike Air Force 1'07" class="producto-imagen">
+          <div class="producto-info">
+            <h3 class="producto-nombre">Nike Air Force 1'07</h3>
+            <p class="producto-descripcion">Zapatillas - Hombre</p>
+            <p class="producto-color">1 color</p>
+            <div class="producto-precio">
+              <span class="precio-oferta">83.99 €</span>
+              <span class="precio-original">119,99 €</span>
+            </div>
+            <div class="producto-descuento">40% de descuento</div>
+          </div>
+        </div>
+        <!-- Puedes añadir más tarjetas aquí -->
+        <div class="tarjeta">
+            <img src="IMAGENES/NIKE.png" alt="Nike Air Force 1'07" class="producto-imagen">
+            <div class="producto-info">
+              <h3 class="producto-nombre">Nike Air Force 1'07</h3>
+              <p class="producto-descripcion">Zapatillas - Hombre</p>
+              <p class="producto-color">1 color</p>
+              <div class="producto-precio">
+                <span class="precio-oferta">83.99 €</span>
+                <span class="precio-original">119,99 €</span>
+              </div>
+              <div class="producto-descuento">40% de descuento</div>
+            </div>
+          </div>
+      <!-- Puedes añadir más tarjetas aqui -->
+      <div class="tarjeta">
+        <img src="IMAGENES/NIKE.png" alt="Nike Air Force 1'07" class="producto-imagen">
+        <div class="producto-info">
+          <h3 class="producto-nombre">Nike Air Force 1'07</h3>
+          <p class="producto-descripcion">Zapatillas - Hombre</p>
+          <p class="producto-color">1 color</p>
+          <div class="producto-precio">
+            <span class="precio-oferta">83.99 €</span>
+            <span class="precio-original">119,99 €</span>
+          </div>
+          <div class="producto-descuento">40% de descuento</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="new-black-box">
+        <img src="IMAGENES/nike-logo-white-with-name-clothes-design-icon-abstract-football-illustration-with-black-background-free-vector.jpg" alt="Nike Air Force 1'07">
+    </div>
+
+    <div class="clothes">
+        <div class="card">
+          <div class="image-section">
+            <span class="label">GREEN</span>
+            <img src="https://via.placeholder.com/300x400" alt="Chaqueta Jordan">
+          </div>
+          <div class="info-section">
+            <h3>Chaqueta Jordan Essentials MA-1</h3>
+            <p>Estilo urbano y comodidad con el icónico logo Jumpman.</p>
+            <span class="price">400€</span>
+          </div>
+        </div>
+        <!-- Puedes añadir más tarjetas aqui -->
+        <div class="card">
+            <div class="image-section">
+              <span class="label">GREEN</span>
+              <img src="https://via.placeholder.com/300x400" alt="Chaqueta Jordan">
+            </div>
+            <div class="info-section">
+              <h3>Chaqueta Jordan Essentials MA-1</h3>
+              <p>Estilo urbano y comodidad con el icónico logo Jumpman.</p>
+              <span class="price">400€</span>
+            </div>
+          </div>
+        <!-- Puedes añadir más tarjetas aqui -->
+        <div class="card">
+            <div class="image-section">
+              <span class="label">GREEN</span>
+              <img src="https://via.placeholder.com/300x400" alt="Chaqueta Jordan">
+            </div>
+            <div class="info-section">
+              <h3>Chaqueta Jordan Essentials MA-1</h3>
+              <p>Estilo urbano y comodidad con el icónico logo Jumpman.</p>
+              <span class="price">400€</span>
+            </div>
+          </div>
+        <!-- Puedes añadir más tarjetas aqui -->
+        <div class="card">
+            <div class="image-section">
+              <span class="label">GREEN</span>
+              <img src="https://via.placeholder.com/300x400" alt="Chaqueta Jordan">
+            </div>
+            <div class="info-section">
+              <h3>Chaqueta Jordan Essentials MA-1</h3>
+              <p>Estilo urbano y comodidad con el icónico logo Jumpman.</p>
+              <span class="price">400€</span>
+            </div>
+          </div>
+        <!-- Puedes añadir más tarjetas aqui -->
+        <div class="card">
+            <div class="image-section">
+              <span class="label">GREEN</span>
+              <img src="https://via.placeholder.com/300x400" alt="Chaqueta Jordan">
+            </div>
+            <div class="info-section">
+              <h3>Chaqueta Jordan Essentials MA-1</h3>
+              <p>Estilo urbano y comodidad con el icónico logo Jumpman.</p>
+              <span class="price">400€</span>
+            </div>
+          </div>
+        <!-- Puedes añadir más tarjetas aqui -->
+        <div class="card">
+            <div class="image-section">
+              <span class="label">GREEN</span>
+              <img src="https://via.placeholder.com/300x400" alt="Chaqueta Jordan">
+            </div>
+            <div class="info-section">
+              <h3>Chaqueta Jordan Essentials MA-1</h3>
+              <p>Estilo urbano y comodidad con el icónico logo Jumpman.</p>
+              <span class="price">400€</span>
+            </div>
+          </div>
+    </div>      
+
+    <div class="white-box">
+        <img src="IMAGENES/air-jordan-jumpman-logo-on-transparent-background-free-vector.jpg" alt="Nike Air Force 1'07">
+    </div>
+    <div class="imagen-doble">
+        <img id="imagen1" src="IMAGENES/bannernegro.png" alt="Nike Air Force 1'07">
+        <img id="imagen2" src="IMAGENES/bannerzapato.png" alt="Nike Air Force 1'07">
+    </div>
 
     <footer class="footer">
-        <p>Hazte miembro Nike y consigue acceso exclusivo a promociones, lanzamientos anticipados, productos personalizados y mucho más. ¡Únete gratis y eleva tu experiencia deportiva!</p>
-    </footer>
+        <!-- Sección superior con recursos, ayuda y empresa -->
+        <div class="footer-top">
+          <div class="footer-section">
+            <h4>Recursos</h4>
+            <ul>
+              <li><a href="#">Guías</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Noticias</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Ayuda</h4>
+            <ul>
+              <li><a href="#">Contacto</a></li>
+              <li><a href="#">Preguntas frecuentes</a></li>
+              <li><a href="#">Envíos y devoluciones</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Empresa</h4>
+            <ul>
+              <li><a href="#">Sobre nosotros</a></li>
+              <li><a href="#">Carreras</a></li>
+              <li><a href="#">Prensa</a></li>
+            </ul>
+          </div>
+        </div>
+      
+        <!-- Div con copyright -->
+        <div class="footer-copyright">
+          &copy; 2024 Todos los derechos reservados.
+        </div>
+      
+        <!-- Div con redes sociales -->
+        <div class="footer-socials">
+          <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+          <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+          <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+          <a href="#"><img src="tiktok-icon.png" alt="TikTok"></a>
+        </div>
+      
+        <!-- Div con logos de Nike y Jordan -->
+        <div class="footer-logos">
+          <img src="nike-logo.png" alt="Nike Logo">
+          <img src="jordan-logo.png" alt="Jordan Logo">
+        </div>
+      </footer>
+      
 </body>
 </html>

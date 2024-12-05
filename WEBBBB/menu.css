@@ -1,418 +1,571 @@
   /* Cargar la fuente NIKE */
   @font-face { 
-    font-family: "NIKE";  /* Define el nombre de la fuente personalizada */
-    src: url(./Tipografia/NIKE.ttf);  /* Especifica la ubicación del archivo de la fuente */
+    font-family: "NIKE";  
+    src: url(./Tipografia/NIKE.ttf); 
   }
 
-  /* Reset básico */
+
   * {
-    margin: 0;  /* Elimina el margen de todos los elementos */
-    padding: 0;  /* Elimina el padding de todos los elementos */
-    box-sizing: border-box;  /* Asegura que el padding y el borde no afecten el tamaño total de los elementos */
-    font-family: Arial, sans-serif;  /* Establece la fuente predeterminada para todo el cuerpo */
-  }
+    margin: 0; 
+    padding: 0;  
+    box-sizing: border-box;    }
 
-  /* Estilo para el contenedor "JUST DO IT" */
-  .just-do-it {
-      background-color: #ff0000; /* Fondo rojo */
-      color: white; /* Texto blanco */
-      text-align: center; /* Centra el texto */
-      font-size: 3rem; /* Tamaño grande del texto */
-      padding: 20px; /* Espaciado interno */
-      border: 10px solid black; /* Borde negro ancho */
-      display: inline-block; /* Hace que el bloque sea en línea con otros elementos */
-      margin: 20px auto; /* Centra el bloque y da margen alrededor */
-      width: 100%;  /* Ocupa el 100% del ancho disponible */
-      margin-top: -2px;  /* Ajusta ligeramente el margen superior */
-      font-family: "NIKE", Arial, sans-serif; /* Usa la fuente personalizada NIKE */
-  }
-
-  /* Estilos del cuerpo */
-  /* Estilos del cuerpo */
   body {
-    background-color: rgba(228, 226, 227, 255); /* Fondo gris claro */
-    min-height: 100vh;  /* Asegura que el cuerpo ocupe toda la altura de la ventana */
     position: relative;
-  
+    overflow-x: hidden;
   }
 
+/* ENCABEZADO DE MI WEB */
 
-  /* Header principal */
-  .header {
-    width: 100%;  /* El encabezado ocupa todo el ancho */
-    position: relative;
-    z-index: 2;  /* Asegura que el encabezado esté por encima de otros elementos */
-  }
-
-  .logo-top {
-    background-color: #ff0000; /* Fondo rojo */
-    color: white;  /* Texto blanco */
-    text-align: center;
-    padding: 15px;
-    font-size: 3rem;
-    font-weight: bold;  /* Texto en negrita */
-    letter-spacing: 2px;  /* Espaciado entre letras */
-  }
-
-  /* Navegación */
- /* Estilo de la barra de navegación */
-/* Estilo de la barra de navegación */
-nav {
-  background-color: rgba(228, 226, 227, 255); /* Fondo gris claro */
+.just-do-it {
+  background-color: #000000; 
+  text-align: center; 
+  font-size: 1.5vw;
   padding: 10px;
-  display: flex; /* Usamos flexbox para la navegación */
-  justify-content: space-between; /* Espaciado entre los elementos */
-  align-items: center; /* Alinea verticalmente los elementos */
 }
 
-/* Estilo de los elementos del menú */
-.menu {
+.red{
+  background-color: #ff0000;
+  padding: 10px;
+}
+
+.red h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff; 
+  font-family: NIKE, Arial, sans-serif;
+  font-weight: normal;
+}
+
+/* Header Styles */
+header {
+  background-color: #E2DDDD;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
-  list-style: none; /* Elimina los puntos de lista */
-  gap: 170px; /* Espacio entre los enlaces de navegación */
-}
-
-/* Estilo de los enlaces del menú */
-.menu a {
-  text-decoration: none; /* Elimina el subrayado */
-  color: rgb(255, 255, 255); /* Texto blanco */
-  text-transform: uppercase; /* Convierte el texto a mayúsculas */
-  font-size: 2.5rem; /* Tamaño de fuente más grande */
-  transition: color 0.3s ease; /* Transición suave para el cambio de color */
-  font-family: "NIKE", Arial, sans-serif; /* Usa la fuente personalizada NIKE */
-}
-
-/* Estilo de los enlaces del menú cuando se pasa el ratón */
-.menu a:hover {
-  color: #ff0000; /* Al pasar el ratón, el texto se vuelve rojo */
-}
-
-/* Logo de la marca */
-.menu-logo img {
-  width: 70px; /* Establece un tamaño fijo para la imagen del logo */
-  height: auto; /* Mantiene la proporción de la imagen */
-}
-
-/* Estilo del ícono de la hamburguesa */
-.hamburger {
-  display: none; /* Inicialmente oculto */
-  flex-direction: column; /* Coloca las líneas del menú en columna */
-  gap: 2px; /* Espaciado entre las líneas */
-  cursor: pointer; /* Cambia el cursor a una mano */
-  padding: 2px; /* Reducción del padding */
   position: relative;
-  z-index: 101; /* Asegura que el ícono esté por encima del menú */
+  padding-top: 20px;
 }
 
-.hamburger span {
-  display: block; /* Hace que las líneas sean bloques */
-  width: 15px; /* Ancho de las líneas */
-  height: 3px; /* Altura de las líneas */
-  background-color: #000; /* Color negro */
-  transition: 0.3s; /* Transición suave */
+.left, .right {
+  display: flex;
+  gap: 9.0vw;
 }
 
-/* Estilo del checkbox (oculto) que controla la visibilidad del menú */
+.text {
+  font-size: 2.7vw;
+  cursor: pointer;
+  font-family: NIKE, Arial, sans-serif;
+  text-decoration: none; 
+  color: #ffffff; 
+  transition: color 0.3s ease;
+}
+
+.text:hover {
+  color: #ff4500;
+}
+
+.logo img {
+  height: 40px;
+  margin-left: 9vw;
+  margin-right: 9vw;
+  filter: invert(100%) brightness(100%);
+}
+
+/* Hamburger Menu Icon */
 .menu-toggle {
-  display: none; /* Oculta el checkbox */
+  display: none;
 }
 
-/* Mostrar el ícono de la hamburguesa en pantallas pequeñas */
-@media (max-width: 768px) {
-  /* El menú se oculta por defecto en pantallas pequeñas */
-  .menu {
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  filter: invert(100%) brightness(100%);
+}
+
+/* Mobile Menu (Hidden by Default) */
+#mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: fixed;
+  top: 0;
+  right: -300px; /* Hidden outside the screen */
+  width: 300px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: -4px 0 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  gap: 15px;
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+#mobile-menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+  text-align: left;
+}
+
+/* Close Button */
+.close-btn {
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+
+/* Display Hamburger Menu for Mobile */
+@media (max-width: 1000px) {
+  .left, .right {
     display: none;
-    flex-direction: column;
-    gap: 10px; /* Espacio entre los enlaces */
+  }
+
+  .menu-icon {
+    display: block;
     position: absolute;
-    top: 50px;
-    left: 0;
-    background-color: #fff; /* Fondo blanco */
-    width: 100%; /* Ancho completo */
-    z-index: 100; /* Asegura que el menú esté por encima de otros elementos */
-    padding: 10px;
+    right: 20px;
   }
 
-  /* El ícono de la hamburguesa se muestra en pantallas pequeñas */
-  .hamburger {
-    display: flex; /* Muestra el menú hamburguesa */
-    position: absolute;
-    top: 15px; /* Ajustamos la posición del ícono */
-    right: 20px; /* Posición horizontal del ícono */
+  .container {
+    justify-content: space-between;
   }
 
-  /* Mostrar el menú cuando el checkbox está marcado */
-  .menu-toggle:checked + .hamburger + .menu {
-    display: flex;
-  }
-
-  /* Estilo de los enlaces del menú en pantallas pequeñas */
-  .menu a {
-    font-size: 2rem; /* Tamaño más pequeño en pantallas pequeñas */
-    text-align: center;
-    padding: 15px;
-    color: black;
-    text-decoration: none;
-  }
-
-  /* Estilo de los enlaces del menú al pasar el ratón */
-  .menu a:hover {
-    background-color: #f0f0f0;
+  /* Show Mobile Menu When Checked */
+  .menu-toggle:checked + .menu-icon + #mobile-menu {
+    right: 0; /* Slide menu into view */
   }
 }
 
+/* ESTILOS PARA EL CUERPO DE LA WEB */
+
+.cuerpo {
+  background-color: wheat;
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+}
+
+/* ESTILOS PARA LA IMAGEN DEL INICIO */
+
+.imagen-cuerpo {
+  width: 100%; 
+  height: 100%; 
+  position: relative; 
+}
+
+.imagen-cuerpo img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+  object-position: center; 
+}
 
 
-  /* Contenido principal */
+/* Contenido principal sobre la imagen */
 .main-content {
-  position: relative;
-  height: 800px;  /* Establece una altura fija */
-  background: url('./IMAGENES/INICIOGRANDE2.png') center no-repeat;  /* Imagen de fondo */
-  background-color: rgba(228, 226, 227, 255);  /* Fondo gris claro si no se carga la imagen */
-  display: flex;  /* Usamos flexbox para el diseño */
-  align-items: flex-start;  /* Alinea los elementos al principio */
-  justify-content: flex-start;  /* Alinea los elementos al principio */
-  padding: 50px;  /* Espaciado interno */
-  width: 100%;  /* Ocupa el 100% del ancho */
-  margin-top: -1px;  /* Ajusta ligeramente el margen superior */
-  background-size: cover;  /* Hace que la imagen cubra toda el área del contenedor */
-  background-position: center;  /* Asegura que la imagen esté centrada */
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  display: flex;
+  justify-content: left;
+  align-items: end;
+  color: white;
+  text-align: center;
+  padding: 50px;
+  box-sizing: border-box;
 }
 
-/* Media Query para pantallas pequeñas */
-@media (max-width: 768px) {
-  .main-content {
-    height: 100vh;  /* Ajusta la altura al 100% de la ventana visible */
-    background-size: cover;  /* Asegura que la imagen cubra todo el área disponible */
-    background-position: center center;  /* Centra la imagen tanto vertical como horizontalmente */
-    padding: 20px;  /* Reduce el espaciado interno en pantallas pequeñas */
-  }
+/* Información del producto */
+.product-info {
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 100%;
 }
 
+/* Título del producto */
+.product-title {
+  font-size: 2.4vw;
+  font-weight: bold;
+  font-family: Odor Mean Chey, sans-serif;
+  color: #525252;
+  text-transform: uppercase;
+  text-align: left;
+}
 
-  .product-info {
-    margin-top: 50px;  /* Da un margen superior grande */
-    color: #000;  /* Texto negro */
-  }
+.product-title span {
+  color: #000000; 
+}
 
-  .product-title {
-    font-size: 2.5rem;  /* Tamaño grande para el título */
-    font-weight: bold;  /* Enfatiza el título con negrita */
-    margin-bottom: 10px;  /* Espacio debajo del título */
-    display: flex;
-    gap: 5px;  /* Espacio entre elementos dentro del título */
-    align-items: center;
-  }
+/* Nuevo modelo */
+.product-title.new-model {
+  font-family: Odor Mean Chey, sans-serif;
+  font-size: 2.4vw;
+  color: #aa0e0e; 
+  text-align: left;
+}
 
-  .product-title span {
-    color: #666;  /* Color gris para las palabras dentro del título */
-  }
+/* Descripción del producto */
+.product-description {
+  font-size: 0.8vw;
+  font-family: "Secular One", sans-serif;
+  color: #000000;
+  margin-bottom: 20px;
+  text-align: left;
+}
 
-  .product-title.new-model {
-    background-color: #ff0000;  /* Fondo rojo */
-    color: white;  /* Texto blanco */
-    padding: 10px 20px;  /* Espaciado interno */
-    font-size: 2rem;  /* Tamaño grande */
-    border-radius: 5px;  /* Bordes redondeados */
-    display: inline-block;
-    margin-top: 10px;  /* Margen superior */
-  }
+/* Estilo del botón de compra */
+.buy-button {
+  background-color: #ad0606; 
+  font-family: NIKE, Arial, sans-serif;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1.2vw;
+  border-radius: 50px;
+  display: flex;
+  margin-top: 20px;
+  width: 7vw;
+  transition: background-color 0.3s ease;
+}
 
-  .product-description {
-    margin: 15px 0;  /* Espacio vertical */
-    max-width: 300px;  /* Limita el ancho */
-    font-size: 1.2rem;  /* Tamaño moderado para la descripción */
-    line-height: 1.4;  /* Espaciado entre líneas */
-  }
+.buy-button:hover {
+  background-color: #c50b0b; 
+}
 
-  .buy-button {
-    display: inline-block;  /* Hace que el botón se comporte como un bloque en línea */
-    background-color: #000;  /* Fondo negro */
-    color: white;  /* Texto blanco */
-    padding: 15px 40px;  /* Espaciado interno */
-    text-decoration: none;  /* Elimina el subrayado */
-    border-radius: 25px;  /* Bordes redondeados */
-    font-weight: bold;  /* Enfatiza el texto */
-    text-transform: uppercase;  /* Convierte el texto a mayúsculas */
-    font-size: 1.2rem;  /* Tamaño moderado */
-    transition: background-color 0.3s ease;  /* Transición suave para el fondo */
-  }
+.logo-imagen {
+  position: absolute; 
+  bottom: 0;          
+  right: 0;          
+  padding: 20px;     
+}
 
-  .buy-button:hover {
-    background-color: #ff0000;  /* Fondo rojo al pasar el ratón */
-  }
+.logo-imagen img {
+  width: 100px;  
+  height: auto; 
+}
 
-  /* Pie de página */
-  .footer {
-    background-color: rgba(0, 0, 0, 0.9);  /* Fondo negro */
-    color: white;  /* Texto blanco */
-    text-align: center;  /* Centra el texto */
-    padding: 20px;  /* Espaciado interno */
-    position: fixed;  /* Fijo en la parte inferior */
-    bottom: 0;  /* Pegado al fondo */
-    width: 100%;  /* Ocupa el 100% del ancho */
-    font-size: 1rem;  /* Tamaño moderado para el texto */
-  }
+/* RECUADRO BALCK BOX */
 
-  /* Estilos del menú hamburguesa */
-  .hamburger {
-    display: none;  /* Inicialmente oculto */
-    flex-direction: column;  /* Ordena las líneas en columna */
-    gap: 5px;  /* Espacio entre las líneas */
-    cursor: pointer;  /* Cambia el cursor a una mano */
-    padding: 10px;  /* Espaciado interno */
-  }
+.black-box {
+  background-color: #000000;
+}
 
-  .hamburger span {
-    display: block;  /* Hace que las líneas sean bloques */
-    width: 25px;  /* Ancho de las líneas */
-    height: 3px;  /* Altura de las líneas */
-    background-color: #000;  /* Color negro */
-    transition: 0.3s;  /* Transición suave para los cambios */
-  }
+.black-box p {
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  margin-left: 8vw;
+  margin-right: 8vw;
+  padding: 10px;
+}
 
-  @media (max-width: 768px) {
-    .menu {
-      gap: 250px;  /* Aumenta el espacio entre los elementos del menú en pantallas pequeñas */
-    }
+/* RECUADRO SUPERVENTAS */
 
-    .hamburger {
-      display: flex;  /* Muestra el menú hamburguesa en pantallas pequeñas */
-      position: absolute;
-      top: 15px;
-      right: 15px;
-    }
-  }
-
-  /* Sección Superventas */
-  .superventas {
-      padding: 40px;
-      background-color: #f5f5f5;  /* Fondo gris claro */
-      text-align: center;  /* Centra el contenido */
-      margin: 0px 100px 100px 100px;  /* Márgenes: arriba 0, derecha 20px, abajo 20px, izquierda 20px */
-  }
-
-  .superventas h2 {
-      font-size: 2.5rem;  /* Tamaño grande para el título */
-      margin-bottom: 20px;  /* Espacio debajo del título */
-      font-weight: bold;  /* Enfatiza el texto */
-      text-transform: uppercase;  /* Convierte el texto a mayúsculas */
-      color: #000;  /* Texto negro */
-  }
-
-/* Estilo para el contenedor de los productos */
-.product-grid {
+.superventas {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;  /* Espacio entre productos */
-  justify-content: center;  /* Distribuye los productos uniformemente */
-  margin: 0px 100px 100px 100px;  /* Márgenes: arriba 0, derecha 100px, abajo 100px, izquierda 100px */
+  gap: 20px;
+  padding: 3vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  justify-content: center;
 }
 
-/* Tarjetas individuales */
-.product-card {
-  background-color: #f5f5f5;  /* Fondo gris claro */
-  border: 1px solid #ddd;  /* Borde gris claro */
-  border-radius: 10px;  /* Bordes redondeados */
-  flex-basis: calc(33.33% - 20px);  /* Ancho flexible (3 columnas en pantallas grandes) */
-  text-align: left;  /* Alinea el texto a la izquierda dentro de la tarjeta */
-  overflow: hidden;  /* Evita el desbordamiento de contenido */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Transición suave para efectos */
-  box-sizing: border-box;  /* Asegura que el ancho incluya el padding y el border */
+/* Estilo para cada tarjeta */
+.tarjeta {
+  background-color: #fff;
+  width: 450px;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease-in-out;
 }
 
-/* Efecto hover para las tarjetas */
-.product-card:hover {
-  transform: translateY(-5px);  /* Eleva la tarjeta al pasar el ratón */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  /* Sombra sutil al pasar el ratón */
+/* Efecto al pasar el ratón */
+.tarjeta:hover {
+  transform: translateY(-5px);
 }
 
-/* Contenedor de imagen en la tarjeta */
-.product-image img {
-  width: 100%;  /* La imagen ocupa el 100% del ancho */
-  height: 400px;  /* Altura fija para las imágenes */
-  object-fit: cover;  /* La imagen cubre todo el espacio sin distorsionarse */
-  background-color: #ccc;  /* Fondo gris en caso de que la imagen no se cargue */
+/* Imagen del producto */
+.producto-imagen {
+  padding: 1vw;
+  width: 100%;
+  height: 30vw;
+  object-fit: cover;
 }
 
-/* Contenido de la tarjeta */
-.product-info {
-  padding: 15px;  /* Espaciado interno */
+/* Información del producto */
+.producto-info {
+  text-align: center;
 }
 
-/* Títulos de productos dentro de la tarjeta */
-.product-title {
-  font-size: 1.5rem;  /* Tamaño de fuente grande */
-  font-weight: bold;  /* Negrita para el título */
-  margin-bottom: 10px;  /* Margen inferior */
+/* Nombre del producto */
+.producto-nombre {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin: 10px 0;
 }
 
-/* Descripción y subtítulo de los productos */
-.product-subtitle {
-  font-size: 1rem;  /* Tamaño de fuente moderado */
-  color: #777;  /* Color gris claro */
-  margin-bottom: 10px;  /* Margen inferior */
+/* Descripción del producto */
+.producto-descripcion,
+.producto-color {
+  font-size: 0.9rem;
+  color: #777;
 }
 
-/* Precio original tachado */
-.product-price {
+/* Precios */
+.producto-precio {
+  margin-top: 10px;
+}
+
+.precio-oferta {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #1a9e1a;  /* Color para el precio con descuento */
+}
+
+.precio-original {
   font-size: 1rem;
-  color: #999;  /* Gris claro */
-  text-decoration: line-through;  /* Tachado del precio */
+  text-decoration: line-through;
+  color: #777;
+  margin-left: 5px;
 }
 
-/* Precio con descuento */
-.product-discounted-price {
-  font-size: 1.5rem;  /* Tamaño de fuente más grande */
-  color: #000;  /* Texto en negro */
-  font-weight: bold;  /* Negrita para resaltar el precio */
-  margin-bottom: 10px;  /* Margen inferior */
+/* Descuento */
+.producto-descuento {
+  color: #000000;
+  padding: 5px;
+  font-weight: bold;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
 }
 
-/* Media Queries para hacer el diseño responsive */
+/* BARRA NEGRA LOGO */
 
-/* Para pantallas medianas (tabletas) */
-@media (max-width: 1024px) {
-  .product-card {
-    flex-basis: calc(50% - 20px);  /* 2 columnas en pantallas medianas */
-  }
+.new-black-box {
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Para pantallas pequeñas (móviles) */
-@media (max-width: 768px) {
-  .product-card {
-    flex-basis: 100%;  /* 1 columna en pantallas pequeñas */
-  }
+.new-black-box img {
+  width: 5vw;
+  height: auto;
+}
 
-  .product-grid {
-    margin: 0 20px 20px 20px;  /* Márgenes reducidos en pantallas pequeñas */
-  }
+/* SECCION DE PRODUCTOS 2 */
+
+/* Contenedor principal */
+.clothes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start; 
+  padding: 20px;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  gap: 4vw;
+  height: auto; 
+  box-sizing: border-box;
+  background-color: #E2DDDD;
 }
 
 
-  /* Descuento en color verde */
-  .discount {
-    font-size: 1rem;
-    color: #008000;  /* Verde para el descuento */
-    font-weight: bold;
-  }
+/* Estilos de la tarjeta */
+.card {
+  width: 400px;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
 
-  /* Sección Superventas alineada a la derecha */
-  .superventas {
-    padding: 40px;
-    background-color: #f5f5f5;  /* Fondo gris claro */
-    text-align: left;  /* Alinea todo el texto de la sección a la derecha */
-  }
+/* Sección de imagen */
+.image-section {
+  position: relative;
+  overflow: hidden;
+}
 
-  /* Título de Superventas */
-  .superventas h2 {
-    font-size: 2.5rem;  /* Tamaño grande para el título */
-    margin-bottom: 20px;  /* Espacio debajo del título */
-    font-weight: bold;  /* Negrita */
-    text-transform: uppercase;  /* Mayúsculas */
-    color: #000;  /* Color negro */
-  }
+.image-section img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección de información */
+.info-section {
+  padding: 15px;
+  text-align: left;
+}
+
+.info-section h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.info-section p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+}
+
+/* SECCION DE IMAGENES */
+
+.white-box {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.white-box img {
+  width: 5vw;
+  height: auto;
+}
 
 
+.imagen-doble {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagen-doble img#imagen1 {
+  width: 50%;
+  height: auto;
+}
+
+.imagen-doble img#imagen2 {
+  width: 50.7%;
+  height: auto;
+}
+
+/* FOOTER */
+
+/* Estilos del footer */
+.footer {
+  background-color: #ffffff; /* Fondo negro */
+  color: #000000; /* Texto blanco */
+  font-family: Arial, sans-serif;
+  padding: 30px 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Sección superior con recursos, ayuda y empresa */
+.footer-top {
+  display: flex;
+  justify-content: space-around; /* Espaciado uniforme */
+  margin-bottom: 20px;
+}
+
+.footer-section h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #777777; /* Cambia el color al pasar el mouse */
+}
+
+/* Div con copyright */
+.footer-copyright {
+  margin: 20px 0;
+  font-size: 14px;
+  border-top: 1px solid #333; /* Línea separadora */
+  padding-top: 10px;
+}
+
+/* Div con redes sociales */
+.footer-socials {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-socials a img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s;
+}
+
+.footer-socials a img:hover {
+  transform: scale(1.2); /* Efecto de zoom */
+}
+
+/* Div con logos */
+.footer-logos {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-logos img {
+  width: 50px; /* Tamaño de los logos */
+  height: auto;
+}
