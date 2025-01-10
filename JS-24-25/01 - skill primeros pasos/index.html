@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <script src='js/main.js'></script>
+    <script>
+        function Login(){
+            // # CSS -> Llamo a un elemento HTML
+            // # JS -> llamo a un elemento HTML
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+            if(email ===""){
+                alert("falta correo!!")
+            }
+            else{
+                alert("correo lleno")
+            }
+                if(password ===""){
+                    alert("illo pon contrazeña")
+                }
+                else{
+                    alert("contraseña llena")
+                }
+                if (email==="" && password ==="")
+                alert("rellena porfa")
+                else if
+                    (email==="" || password==="") 
+                    alert("te falta algo crack")
+                    else{
+                        alert("login correcto")
+                    }
+
+                
+            }
+    </script>
+</head>
+<body>
+    <h1>PRIMERA FUNCION JS</h1>
+    <h4>email</h4>
+    <input type="text" id="email">
+    <h4>password</h4>
+    <input type="text" id="password">
+    <input type="button" id="login" value="Enviar" onclick="Login();">
+    
+</body>
+</html>
