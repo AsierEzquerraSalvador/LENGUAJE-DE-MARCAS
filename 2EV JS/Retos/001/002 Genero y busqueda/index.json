@@ -1,0 +1,34 @@
+[
+    {
+      "titulo": "El Rey León",
+      "año": 1994,
+      "genero": "Animación"
+    },
+    {
+      "titulo": "Matrix",
+      "año": 1999,
+      "genero": "Ciencia Ficción"
+    },
+    {
+      "titulo": "Inception",
+      "año": 2010,
+      "genero": "Acción"
+    },
+    {
+        "titulo": "THE BATMAN",
+        "año":2024,
+        "genero":"Drama"
+    },
+    {
+        "titulo":"EL PROTECTOR",
+        "año":2000,
+        "genero":"Drama"
+
+    },
+    {
+        "titulo":"MULTIPLE",
+        "año":2016,
+        "genero":"Terror"
+    }
+  ]
+  
